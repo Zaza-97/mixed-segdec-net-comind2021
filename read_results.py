@@ -107,9 +107,9 @@ def process_dataset(results_path, dataset, folds, results, dagm_join):
 
 
 def main():
-    # dataset,results_folder = "STEEL", '/home/jakob/outputs/WEAKLY_LABELED/STEEL/GRADIENT'
+    dataset,results_folder = "STEEL", '/kaggle/working/ResultFolder'
     # dataset, results_folder = "KSDD2", '/home/jakob/outputs/WEAKLY_LABELED/KSDD2/GRADIENT'
-    dataset, results_folder = "DAGM", '/kaggle/working/ResultFolder/DAGM/'
+    # dataset, results_folder = "DAGM", '/kaggle/working/ResultFolder/DAGM/'
     # dataset, results_folder = "KSDD", '/home/jakob/outputs/WEAKLY_LABELED/RELEASE/'
 
     dagm_join = False # If True will join(average) results for all classes
