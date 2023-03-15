@@ -9,7 +9,7 @@ def read_split(num_segmented: int, fold: int, kind: str):
     with open(f"splits/{fn}", "rb") as f:
         train_samples, test_samples = pickle.load(f)
         if kind == 'TRAIN':
-            return train_samples[fold - 1]
+            return train_samples[fold - 1] # meno 1 perché il dataset è numerato da 1 a 10
         elif kind == 'TEST':
             return test_samples[fold - 1]
         else:
